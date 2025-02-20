@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #37208b;
+    color: white;
+    font-family: "Saira", serif;
+}
+
+.game-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fcce33;
+    text-transform: uppercase;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin-bottom: 20px;
+    background-color: #6448c1;
+    padding: 20px 20px ;
+    border-radius: 17px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    background-color: #332266;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #33226696;
+    outline: 1px solid white;
+}
+
+.status {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.info{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#reset {
+    padding: 15px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #26155c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#reset:hover {
+    background-color: #26155c;
+    outline: 1px solid white;
+}
+.x{
+    color: #eb1851;
+}
+.o{
+    color: #eec236;
+}
+.lead{
+    color: #27175d !important;
+    
+}
