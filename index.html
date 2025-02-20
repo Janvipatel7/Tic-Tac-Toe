@@ -46,12 +46,12 @@
 
             function win(val) {
                 Swal.fire({
-                         title: `${val} Won the Match!`, // ✅ Properly formatted template literal
+                         title: `${val} Won the Match!`, 
                          icon: "success",
                          backdrop: false
                 }).then(() => {
-                        //  clearBoard(); // Clear the board after the alert
-                        //  count = 0;
+                         clearBoard(); 
+                         count = 0;
                     });
 
                 if (val === "X") {
@@ -63,22 +63,8 @@
                                                       }
             }
     
-            // function win(val){
-            //     Swal.fire({
-            //     title:'' ${val} Won the Match !'',
-            //     icon: "success",
-            //     backdrop : false,
-            //     });
-    
-            // if(val=="X"){
-            //     xcount++;
-            //     document.getElementById("xWins").innerHTML = xcount;
-            // }else{
-            //     ocount++;
-            //     document.getElementById("oWins").innerHTML = ocount;
-            // }
-            // }
-    
+            
+            
             function checkWin(val){
                 // horizontal
                 let winflag = true
@@ -238,6 +224,7 @@
                 clear()
                 xcount = 0
                 ocount = 0
+                count = 0;
                 document.getElementById("xWins").innerHTML = xcount;
                 document.getElementById("oWins").innerHTML = ocount;
             })
